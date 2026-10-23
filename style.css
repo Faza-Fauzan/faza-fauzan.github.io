@@ -1,13 +1,23 @@
-.jumbotron {
-    padding-top: 6rem;
-    background-color: #e2edff;
-}
-.gambar {
-    border: solid 5px black;
-}
-#projects {
-    background-color: #e2edff;   
-}
-section {
-    padding-top: 5rem;
-}
+.jumbotron { padding-top: 6rem; background-color: #e2edff; }
+.gambar { border: solid 5px black; }
+#projects { background-color: #e2edff; }
+section { padding-top: 5rem; }
+
+:root { color-scheme: light; }
+html[data-theme="dark"] { color-scheme: dark; }
+html[data-theme="dark"] body,
+html[data-theme="dark"] #about,
+html[data-theme="dark"] #contacts { background-color: #121820; color: #f1f5f9; }
+html[data-theme="dark"] .jumbotron,
+html[data-theme="dark"] #projects { background-color: #202b3a; color: #f1f5f9; }
+html[data-theme="dark"] .card { background-color: #293548; color: #f1f5f9; border-color: #61728a; }
+html[data-theme="dark"] .form-control { background-color: #1c2837; color: #fff; border-color: #8190a5; }
+html[data-theme="dark"] .form-control:focus { border-color: #a9c9ff; }
+html[data-theme="dark"] .form-control::placeholder { color: #c3cbd5; }
+html[data-theme="dark"] .jumbotron svg path,
+html[data-theme="dark"] #projects svg path { fill: #121820; }
+html[data-theme="dark"] #about svg path { fill: #202b3a; }
+.theme-toggle { position: fixed; right: 12px; top: 50%; transform: translateY(-50%); z-index: 1100; border: 2px solid #1d4ed8; border-radius: 999px; background: #fff; color: #102c60; padding: 10px 14px; font-weight: 700; box-shadow: 0 3px 12px #0004; }
+.theme-toggle:focus-visible { outline: 3px solid #ffbf47; outline-offset: 3px; }
+html[data-theme="dark"] .theme-toggle { background: #202b3a; color: #fff; border-color: #a9c9ff; }
+@media (max-width: 600px) { .theme-toggle { right: 8px; top: auto; bottom: 18px; transform: none; } }
